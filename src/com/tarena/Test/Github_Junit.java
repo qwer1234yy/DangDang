@@ -8,7 +8,7 @@ public class Github_Junit {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		system.out.println("test");
 	}
 
 }
