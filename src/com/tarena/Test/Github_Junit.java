@@ -8,7 +8,7 @@ public class Github_Junit {
 
 	@Test
 	public void test() {
-		system.out.println("test");
+		System.out.println("test");
 	}
 
 }
