@@ -14,5 +14,9 @@ public class Github_Junit {
 	public void test2() {
 		System.out.println("test2");
 	}
+	@Test
+	public void test3() {
+		System.out.println("test3");
+	}
 
 }
