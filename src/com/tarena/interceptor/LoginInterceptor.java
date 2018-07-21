@@ -6,7 +6,6 @@ import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 /**
- * @author qianjm
  * 检查用户是否登录的拦截器
  */
 public class LoginInterceptor extends AbstractInterceptor{

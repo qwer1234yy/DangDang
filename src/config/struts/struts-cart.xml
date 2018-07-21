@@ -7,7 +7,7 @@
 	<package name="cart" namespace="/cart" extends="dang-default">
 		<!-- 定义Action index -->
 		<action name="cart" class="com.tarena.web.action.cart.CartAction">
-			<interceptor-ref name="myStack"></interceptor-ref>
+			<interceptor-ref name="dangStack"></interceptor-ref>
 			<result name="success">/WEB-INF/jsp/cart/cart_list.jsp</result>
 			<result name="login" type="redirectAction">
 				<param name="namespace">/user</param>
@@ -18,9 +18,9 @@
 	<package name="ajaxCart" namespace="/cart" extends="json-default">
 		<interceptors>
 			<interceptor name="loginCheck" class="com.tarena.interceptor.LoginInterceptor"></interceptor>
-			<interceptor name="myStack" class="study_test.interceptor_test"></interceptor>
+<!-- 			<interceptor name="myStack" class="study_test.interceptor_test"></interceptor> -->
 			<interceptor-stack name="dangStack">
-			    <interceptor-ref name="myStack"></interceptor-ref>
+<!-- 			    <interceptor-ref name="myStack"></interceptor-ref> -->
 				<interceptor-ref name="loginCheck"></interceptor-ref>
 				<interceptor-ref name="defaultStack"></interceptor-ref>
 			</interceptor-stack>
